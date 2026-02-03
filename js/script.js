@@ -12,14 +12,14 @@ let easterEggTimer = null;
 
 // Date configuration - Valentine Week 2026
 const valentineDates = [
-    { day: 1, date: new Date('2026-02-07'), name: 'Rose Day' },
-    { day: 2, date: new Date('2026-02-08'), name: 'Propose Day' },
-    { day: 3, date: new Date('2026-02-09'), name: 'Chocolate Day' },
-    { day: 4, date: new Date('2026-02-10'), name: 'Teddy Day' },
-    { day: 5, date: new Date('2026-02-11'), name: 'Promise Day' },
-    { day: 6, date: new Date('2026-02-12'), name: 'Hug Day' },
-    { day: 7, date: new Date('2026-02-13'), name: 'Kiss Day' },
-    { day: 8, date: new Date('2026-02-14'), name: "Valentine's Day" }
+    { day: 1, date: new Date('2026-02-02'), name: 'Rose Day' },
+    { day: 2, date: new Date('2026-02-02'), name: 'Propose Day' },
+    { day: 3, date: new Date('2026-02-02'), name: 'Chocolate Day' },
+    { day: 4, date: new Date('2026-02-02'), name: 'Teddy Day' },
+    { day: 5, date: new Date('2026-02-02'), name: 'Promise Day' },
+    { day: 6, date: new Date('2026-02-02'), name: 'Hug Day' },
+    { day: 7, date: new Date('2026-02-02'), name: 'Kiss Day' },
+    { day: 8, date: new Date('2026-02-02'), name: "Valentine's Day" }
 ];
 
 // ================================
@@ -665,4 +665,5 @@ if ('loading' in HTMLImageElement.prototype) {
 window.goToTimeline = goToTimeline;
 window.nextDay = nextDay;
 window.previousDay = previousDay;
+
 window.showPage = showPage;
