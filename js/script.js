@@ -325,32 +325,29 @@ function previousDay(day) {
 // ================================
 // Music Toggle
 // ================================
+
+const bgAudio = new Audio('assets/bgmusic.mp3');
+
+bgAudio.loop = true;
+bgAudio.volume = 0.5; // optional, soft background vibe
+
+// Attach click listener to your existing div
+document.getElementById('musicToggle').addEventListener('click', toggleMusic);
+
 function toggleMusic() {
     const musicToggle = document.getElementById('musicToggle');
-    
+
     if (musicPlaying) {
-        // Stop music (if you have audio implemented)
+        bgAudio.pause();
         musicToggle.classList.remove('playing');
         musicPlaying = false;
     } else {
-        // Play music (if you have audio implemented)
-        // You can add: const audio = new Audio('assets/background-music.mp3');
-        // audio.loop = true;
-        // audio.play();
+        bgAudio.play();
         musicToggle.classList.add('playing');
         musicPlaying = true;
     }
-    
-    // Note: To add actual music, uncomment and implement audio functionality:
-    // const audio = document.getElementById('backgroundMusic');
-    // if (audio) {
-    //     if (musicPlaying) {
-    //         audio.pause();
-    //     } else {
-    //         audio.play();
-    //     }
-    // }
 }
+
 
 // ================================
 // Particle Animation (Landing Page)
